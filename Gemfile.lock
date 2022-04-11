@@ -247,6 +247,8 @@ DEPENDENCIES
   pry-rails
   puma
   rails (= 5.2.4.1)
+  source "https://rubygems.org"
+  ruby "3.1.1"
   redis
   sassc-rails
   simple_form
