@@ -112,13 +112,11 @@ GEM
       nokogiri (~> 1)
       rake
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.1)
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.13.4)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.4-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (0.21.0)
@@ -228,7 +226,7 @@ GEM
     websocket-extensions (0.1.5)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-18
 
 DEPENDENCIES
   autoprefixer-rails
@@ -247,8 +245,6 @@ DEPENDENCIES
   pry-rails
   puma
   rails (= 5.2.4.1)
-  source "https://rubygems.org"
-  ruby "3.1.1"
   redis
   sassc-rails
   simple_form
@@ -262,4 +258,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.1.4
+   2.3.11
