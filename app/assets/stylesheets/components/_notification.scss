@@ -1,0 +1,135 @@
+.notification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px 16px 16px;
+
+}
+
+.notification-review {
+  border-bottom: 0.7px solid #4A4A4A;
+  background-color: white;
+  padding-bottom: 16px;
+}
+
+#review-rating {
+  margin-left: 16px;
+}
+
+#review-content {
+  margin-right: 16px;
+}
+
+.long-input {
+  width: 400%;
+  margin-left: 8px;
+  border-radius: 16px;
+}
+
+.s-input {
+  width: 120px;
+  margin-right: 24px;
+  border-radius: 16px;
+
+}
+
+
+.notification .notification-content {
+  flex-grow: 1;
+  padding: 0 24px;
+  background: white;
+  margin-left: 22px;
+  padding: 8px 16px;
+  border-radius: 24px;
+}
+
+
+
+.notification p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.notification small {
+  color: #999999;
+  font-weight: bold;
+}
+.notification .notification-actions {
+
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  margin-left: 22px;
+}
+
+.notification:hover .notification-actions {
+  opacity: 1;
+}
+
+.notification .notification-actions a {
+  color:#4A4A4A;
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.notification .notification-actions a:hover {
+  color: #555555;
+}
+
+.accept-btn {
+  border: 2px solid lightgreen;
+  padding: 8px 24px;
+  border-radius: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  margin-left: 8px;
+
+}
+
+.reject-btn {
+  border: 2px solid #C31100;
+  padding: 8px 24px;
+  border-radius: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  margin-left: 16px;
+}
+
+.notification .notification-actions-btn {
+
+  padding: 8px 24px;
+  transition: opacity 0.3s ease;
+
+}
+
+.accept-btn.confirmed {
+  background-color: #41A029;
+  color: white;
+}
+
+.reject-btn.confirmed {
+  background-color: #C31100;
+  color: white;
+}
+
+.green {
+  background-color: #41A029;
+  color: white;
+}
+
+.red {
+  background-color: #C31100;
+  color: white;
+}
+
+.grey {
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  color: #4A4A4A;
+  border-radius: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,51 @@
+  <div class="d-flex justify-content-between bg-white">
+    <div class="w-50 mx-3 mt-1 card-show">
+      <div>
+        <% if @nanny.photo.attached? %>
+        <div class= "text-center">
+        <%= cl_image_tag @nanny.photo.key, class: "card-image w-50" %>
+        </div>
+        <% end %>
+      </div>
+      <div class="mt-3">
+        <h2 class="text-center"><%= @nanny.user.name %></h2>
+        <div class="d-flex justify-content-between my-3">
+          <div>
+            <p><strong>Description: </strong><%= @nanny.description %></p>
+            <p><strong>Location: </strong><%= @nanny.city %></p>
+            <% if @nanny.certification %>
+              <p><strong>Certified in: </strong><%= @nanny.certification %></p>
+            <% end %>
+          </div>
+          <div>
+            <p><strong>Rate: </strong><%=@nanny.price_per_hour%>€ per hour</p>
+            <p><strong>Age: </strong><%= @nanny.age %></p>
+          </div>
+        </div>
+      <div><%= link_to "Book now!", new_nanny_booking_path(@nanny), class: "btn btn-success w-100" %></div>
+      <p><%= link_to 'Back to all nannies', nannies_path, class: "btn btn-primary btn-black btn-submit w-100" %></p>
+    <br>
+    <div class="reviews">
+      <h2>Reviews</h2>
+    <% @nanny.reviews.each do |review|%>
+    <div class="review">
+    <p><strong><%= review.booking.user.name %> says:</strong></p>
+    <p><%= review.content %></p>
+    <% review.rating.times do %>
+    <i class="fas fa-star m-1 "></i>
+    <% end %>
+    </div>
+    <% end %>
+    </div>
+  </div>
+    </div>
+      <div
+        id="map"
+        style="width: 600px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+      ></div>
+    </div>
+
+
+

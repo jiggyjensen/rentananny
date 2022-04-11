@@ -1,0 +1,27 @@
+<div class="sign-up-wrapper" style="background-image: url(https://res.cloudinary.com/dvallavgs/image/upload/v1584457046/woman-holding-baby-while-sitting-on-fur-bean-bag-698878_rtfmhk.jpg)">
+  <div class="container mx-0 h-100">
+    <div class="row h-100">
+      <div class="col-xs-12 col-md-6 offset-md-1 black_bgr mt-3">
+       <h1 class="text-center">Book your nanny!</h1>
+        <%= simple_form_for [@nanny, @booking] do |f| %>
+        <div class="short_input">
+        <%= f.input :address %>
+        <%= f.input :kids_number, input_html: { min: "0" }, label: "number of kids" %>
+        <%= f.input :message %>
+        <%= f.input :start_date %>
+        <%= f.input :end_date %>
+        <%= f.input :photo, as: :file, label: "choose a picture of your kids!" %>
+        </div>
+        <div class="text-center">
+        <%= f.submit "Submit", class: "btn btn-primary btn-submit w-100" %>
+        </div>
+
+        <% end %>
+
+        <div class="text-center mt-3">
+          <%= link_to "Go back", nannies_path, class: "btn btn-primary btn-submit w-100" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

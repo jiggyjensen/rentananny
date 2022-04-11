@@ -1,0 +1,111 @@
+.card-image {
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  object-fit: cover;
+
+
+}
+
+.block {
+  display: block;
+  margin: 8px;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.hover-img {
+  position: relative;
+}
+
+
+a {
+  color: #444c54;
+}
+
+
+.card-nanny {
+  background-color: white;
+  border-radius: 8px;
+
+}
+
+
+.card-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(115, 115, 115, 0.82);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.hover-img:hover .card-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.price {
+  position: absolute;
+  color: white;
+  background-color: #dea334cc;
+  padding: 13px;
+  border-radius: 26%;
+  top: 180px;
+  left: 20px;
+}
+
+.user-name {
+  margin-bottom: 10px;
+  font-family: "montserrat";
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+
+.card-show {
+  border: solid 1px $primary;
+  border-radius: 4px;
+  padding: 30px;
+}

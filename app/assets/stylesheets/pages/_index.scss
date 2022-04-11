@@ -1,2 +1,17 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "show";
+
+
+.card {
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+@import "become_a_nan"

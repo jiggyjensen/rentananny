@@ -1,0 +1,27 @@
+
+.sign-up-wrapper {
+  background-size: cover;
+  height: 100vh;
+}
+
+.black_bgr {
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.3);
+}
+
+.btn_submit {
+  border-color: #EBD8AC;
+  background-color: transparent;
+}
+
+.btn_submit:hover {
+  background-color: #EBD8AC;
+}
+
+.short_input {
+  input {
+    width: 100%;
+
+  }
+
+}

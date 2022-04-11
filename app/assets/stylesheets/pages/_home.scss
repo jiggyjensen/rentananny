@@ -1,1 +1,55 @@
 // Specific CSS for your home-page
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero > h1 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 3px 2px #000000;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.hero > article > p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 23px;
+  text-shadow: 2px 1px #000000;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1448301566816-a036b4240d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80') center;
+  background-size: cover;
+  padding: 22rem 11rem;
+  height: calc(100vh - 100px);
+}
+
+body {
+  margin: 0px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+li {
+  margin: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+#title {
+  margin-right: auto;
+  text-align: center;
+}
+
+
+p {
+  margin: 0px;
+}

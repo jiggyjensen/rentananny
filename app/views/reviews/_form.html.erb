@@ -1,0 +1,9 @@
+<%= simple_form_for([ booking, review ])  do |form| %>
+<div class='d-flex justify-content-between'>
+  <%= form.input :content, class: 'mr-4', input_html: { class: 'long-input' } %>
+  <%= form.input :rating, collection: Review::RATINGS, input_html: { class: 's-input' }  %>
+  </div>
+<div class="d-flex justify-content-center">
+  <%= form.button :submit, 'send review!', class: 'grey' %>
+</div>
+<% end %>

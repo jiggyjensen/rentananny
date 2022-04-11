@@ -1,0 +1,20 @@
+<main class="wrapper">
+  <section class="hero">
+    <h1>Need a hand?</h1>
+    <article>
+        <p>Browse nannies in your area that can provide the support you need in your busy life.</p>
+    </article>
+    <%= link_to nannies_path do %>
+    <button type="button" class="btn btn-success">Find a Nanny</button>
+    <% end %>
+    <% if current_user&.nanny %>
+    <%= link_to bookings_path do %>
+    <button type="button" class="btn btn-primary btn-submit">My Dashboard</button>
+    <% end %>
+    <% else %>
+    <%= link_to new_nanny_path do %>
+    <button type="button" class="btn btn-primary btn-submit">Become a Nanny</button>
+    <% end %>
+    <% end %>
+  </section>
+</main>
