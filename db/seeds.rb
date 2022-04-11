@@ -24,23 +24,23 @@ User.destroy_all
 
 
 sleep(2)
-puts 'Creating new nannies from Le Wagon alumni...'
+puts 'Creating new nannies...'
 sleep(2)
 
 users = []
-cities = ["Barcelona", "Dakar", "Brussels", "New York", "Berlin", "Tel Aviv", "Cape Town", "Sevilla", "Amsterdam"]
+cities = ["Barcelona", "Dakar", "Brussels", "New York", "Berlin", "Tel Aviv", "Cape Town", "Sevilla", "Amsterdam", "Mexico City"]
 
 40.times do
   users << User.create(
     email: Faker::Internet.email,
     password: Faker::Internet.password,
-    name: Faker::Internet.username)
+    name: Faker::TvShows::RuPaul.queen)
 end
 users.each do |user|
   nanny = Nanny.create(
     user: user,
     price_per_hour: rand(10..45),
-    description: Faker::TvShows::BojackHorseman.quote,
+    description: Faker::TvShows::RuPaul.quote,
     age: rand(18..60),
     city: cities.sample)
   url = "https://kitt.lewagon.com/placeholder/users/random"
