@@ -22,6 +22,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'newrelic_rpm'
+gem 'scout_apm'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
